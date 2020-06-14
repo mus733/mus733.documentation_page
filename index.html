@@ -1,0 +1,343 @@
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div id="nav-border">
+    <nav id="navbar">
+        <header id="navbar-header">Python Documentation</header>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#python_introduction"> python introduction </a></ul>
+        <div class="border-class"></div>
+        <ul> <a class="nav-link" href="#what_you_should_know"> What you should know</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#python_vs_java"> Python Vs Java</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#hello_world"> Hello World</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#python_variables">Python Variables</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#Assigning_values_to_Variables"> Assigning values to Variables</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#Python_Identifiers"> Python Identifiers</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#Python_Statement"> Python Statement</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#python_comments"> Python Comments</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#Data_type">  Data Type</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#if_statement"> If statement</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#Python_Casting"> Python Casting</a></ul>
+        <div class="border-class"></div>
+        <ul><a class="nav-link" href="#doc_reference">Doc Reference</ul></a> </nav>
+        
+    </div>    
+<main id="main-doc">
+<header id="Main-page-header">Welcome to my online python beginner documentation</header>
+
+<section id="python_introduction" class="main-section">
+<header class="section-header">Python Introduction</header>
+
+<p> What is Python? Executive Summary
+    Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed. </p>
+    <p>The language's core philosophy is summarized in the document The Zen of Python (PEP 20), which includes aphorisms such as:</p>
+    <li>Beautiful is better than ugly.</li>
+    <li>Explicit is better than implicit.</li>
+    <li>Simple is better than complex.</li>
+    <li>Complex is better than complicated.</li>
+    <li>Readability counts.</li>
+
+
+</section>
+
+<section id="what_you_should_know" class="main-section">
+    <header class="section-header">What you should know</header>
+    <p>This guide assumes you have the following basic background:</p>
+    <li>have a basic understanding of Computer Programming Terminologies.</li>
+    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+    <li>Some programming experience. If you are new to programming,try searching for tutorials on youtube</li>
+</section>
+
+<section id="python_vs_java" class="main-section">
+<header class="section-header">Python Vs Java</header>
+
+<p>Python is an interpreted and dynamically typed language, whereas Java is a compiled and statically typed language.
+
+    Python code doesn’t need to be compiled before being run. Java code, on the other hand, needs to be compiled from code readable by humans to code readable by the machine.
+    
+    Simply put, this generally means that Python has faster launch time and slower run time, while Java has slower launch time and faster run time.</p>
+
+<p>Development in Java is a bigger investment all around; it requires more time and money. If you have a lot of those on your hands, you should be perfectly satisfied with Java.
+
+    Python is less expensive, which is why for most projects it’s the preferred choice. Remember, just because something costs more doesn’t automatically make it better.</p>
+
+
+</section>
+
+
+
+<section id="hello_world" class="main-section">
+<header class="section-header">Hello World</header>
+<p>Source Code</p>
+<p> <code><pre class="prettyprint"># This program prints Hello, world!
+
+    print('Hello, world!')</pre></code></p>
+    
+
+<p>Output:</p>
+
+<p><code><pre class="prettyprint">Hello, world!</pre></code></p>
+<p>In this program, we have used the built-in print() function to print the string Hello, world! on our screen.</p>
+<p>By the way, a string is a sequence of characters. In Python, strings are enclosed inside single quotes, double quotes, or triple quotes.</p>
+
+
+
+</section>
+
+
+<section id="python_variables" class="main-section">
+<header class="section-header">Python Variables</header>
+<p>A variable is a named location used to store data in the memory. It is helpful to think of variables as a container that holds data that can be changed later in the program. For example,</p>
+<p><code><pre class="prettyprint">number = 10</pre></code></p>
+<p>Here, we have created a variable named number. We have assigned the value 10 to the variable.
+
+    You can think of variables as a bag to store books in it and that book can be replaced at any time.</p>
+
+<code><pre class="prettyprint">number = 10
+    number = 1.1</pre></code>
+
+<p>Initially, the value of number was 10. Later, it was changed to 1.1.
+    <b>In Python, we don't actually assign values to the variables. Instead, Python gives the reference of the object(value) to the variable.</b></p>
+
+
+
+</section>
+
+
+<section id="Assigning_values_to_Variables" class="main-section">
+<header class="section-header">Assigning values to Variables</header>
+<p>As you can see from the above example, you can use the assignment operator = to assign a value to a variable.</p>
+<p><b>Example 1: Declaring and assigning value to a variable</b></p>
+<p><code><pre class="prettyprint">website = "apple.com"
+    print(website)</pre></code></p>
+
+<p>Output:</p>
+   <p> <pre class="prettyprint">apple.com
+    </pre></p>
+
+    <p>In the above program, we assigned a value apple.com to the variable website. Then, we printed out the value assigned to website i.e. apple.com</p>
+    <p><b>Note: Python is a type-inferred language, so you don't have to explicitly define the variable type. It automatically knows that apple.com is a string and declares the website variable as a string.</b></p>
+
+
+
+</section>
+
+<section id="Python_Identifiers" class="main-section">
+<header class="section-header">Python Identifiers</header>
+<p>An identifier is a name given to entities like class, functions, variables, etc. It helps to differentiate one entity from another.</p>
+
+<p><b>Rules for writing identifiers</b></p>
+
+<p> <ol>
+    <li>Identifiers can be a combination of letters in lowercase (a to z) or uppercase (A to Z) or digits (0 to 9) or an underscore _. Names like myClass, var_1 and print_this_to_screen, all are valid example.</li>
+    <li>An identifier cannot start with a digit. 1variable is invalid, but variable1 is a valid name.</li>
+    <li>Keywords cannot be used as identifiers. <div><pre class="prettyprint">global = 1</pre></div>
+    <p>Output:</p>
+<p><pre class="prettyprint">File "<interactive input>", line 1
+    global = 1
+           ^
+SyntaxError: invalid syntax</pre></p></li>
+    <li>We cannot use special symbols like !, @, #, $, % etc. in our identifier.
+<div><pre class="prettyprint">a@ = 0
+</pre></div><p>Output:</p><p><pre class="prettyprint">File "<interactive input>", line 1
+    a@ = 0
+     ^
+SyntaxError: invalid syntax</pre></p>    </li>
+    <li>An identifier can be of any length.</li>
+</ol>
+</p>
+</section>
+<section id="Python_Statement" class="main-section">
+<header class="section-header">Python Statement</header>
+<p>instructions that a Python interpreter can execute are called statements. For example, a = 1 is an assignment statement. if statement, for statement, while statement, etc. are other kinds of statements which will be discussed later.</p>
+
+<p><b>Multi-line statement</b></p>
+
+<p>In Python, the end of a statement is marked by a newline character. But we can make a statement extend over multiple lines with the line continuation character (\). For example:</p>
+<p><pre class="prettyprint">a = 1 + 2 + 3 + \
+    4 + 5 + 6 + \
+    7 + 8 + 9</pre></p>
+
+
+    <p>This is an explicit line continuation. In Python, line continuation is implied inside parentheses ( ), brackets [ ], and braces { }. For instance, we can implement the above multi-line statement as:</p>
+
+    <p><pre class="prettyprint">a = (1 + 2 + 3 +
+        4 + 5 + 6 +
+        7 + 8 + 9)</pre></p>
+
+<p>Here, the surrounding parentheses ( ) do the line continuation implicitly. Same is the case with [ ] and { }. For example:</p>
+<p><pre class="prettyprint">colors = ['red',
+    'blue',
+    'green']</pre></p>
+
+
+<p>We can also put multiple statements in a single line using semicolons, as follows:</p>
+<p><pre class="prettyprint">a = 1; b = 2; c = 3
+</pre></p>
+</section>
+
+
+<section id="python_comments" class="main-section">
+<header class="section-header">Python Comments</header>
+
+<p>Comments are very important while writing a program. They describe what is going on inside a program, so that a person looking at the source code does not have a hard time figuring it out.
+
+    You might forget the key details of the program you just wrote in a month's time. So taking the time to explain these concepts in the form of comments is always fruitful.
+    
+    In Python, we use the hash (#) symbol to start writing a comment.
+    
+    It extends up to the newline character. Comments are for programmers to better understand a program. Python Interpreter ignores comments.</p>
+
+<p><pre class="prettyprint">#This is a comment
+    #print out Hello
+    print('Hello')</pre></p>
+
+
+
+
+</section>
+
+
+<section id="Data_type" class="main-section">
+<header class="section-header">Data Type</header>
+
+<p>n programming, data type is an important concept.
+
+    Variables can store data of different types, and different types can do different things.
+    
+    Python has the following data types built-in by default, in these categories:</p>
+
+<ul>
+<li>Text Type</li>
+<li>Numeric Types</li>
+<li>Sequence Types</li>
+<li>Mapping Type</li>
+<li>Set Types</li>
+<li>Boolean Type</li>
+<li>Binary Types</li>
+</ul>
+
+
+
+
+</section>
+
+
+<section id="if_statement" class="main-section">
+<header class="section-header">If statement</header>
+<p>Python supports the usual logical conditions from mathematics:</p>
+
+
+<p><ul>
+<li>Equals: a == b</li>
+<li>Not Equals: a != b</li>
+<li>Less than: a < b</li>
+<li>Less than or equal to: a <= b</li>
+<li>Greater than: a > b</li>
+<li>Greater than or equal to: a >= b</li>
+
+<p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+
+<p>An "if statement" is written by using the if keyword.</p>
+
+<p><b>Example:</b></p>
+
+<p><pre class="prettyprint">a = 33
+    b = 200
+    if b > a:
+      print("b is greater than a")</pre></p>
+</ul></p>
+</section>
+
+
+<section id="Python_Casting" class="main-section">
+<header class="section-header">Python Casting</header>
+<p>There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.</p>
+
+<p>Casting in python is therefore done using constructor functions:</p>
+
+<p><ul>
+<li>int() - constructs an integer number from an integer literal, a float literal (by rounding down to the previous whole number), or a string literal (providing the string represents a whole number)</li>
+<li>float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+<li>str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+</ul></p>
+</section>
+
+
+<section id="doc_reference" class="main-section">
+    <header class="section-header">Doc Reference</header>
+<p>All the documentation in this page is taken from:</p>
+<p><ul>
+
+    <li><a class="link" href="https://www.w3schools.com/python/default.asp">w3schools</a></li>
+    <li><a class="link" href="https://www.programiz.com/python-programming">programiz</a></li>
+    <li><a class="link" href="https://en.wikipedia.org/wiki/Python_(programming_language)">wikipedia</a></li>
+</ul></p>
+
+
+
+
+</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
